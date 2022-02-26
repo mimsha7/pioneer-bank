@@ -22,7 +22,7 @@
         </div>
     </div>
     <div id="t-area">
-        <h1>Transaction Area</h1>
+        <h1 class="transaction">Transaction Area</h1>
         <div class="row">
             <div class="col-md-4">
             <div class="deposit t-style">
@@ -47,7 +47,7 @@
             <div class="col-md-6">
                 <div class="submit-area">
                     <h1>Deposit</h1>
-                    <h4><input type="text" class="form-control" name="" id="depositAmount" placeholder="$ Amount you want to deposit"></h4>
+                    <h4><input type="text" class="form-control" name="" id="depositAmount" placeholder="$ Enter amount you want to deposit"></h4>
                     <br>
                     <button id="deposit" class="btn btn-success">Deposit</button>
                 </div>
@@ -55,14 +55,13 @@
             <div class="col-md-6">
                 <div class="submit-area">
                     <h1>Withdraw</h1>
-                    <h4><input type="text" class="form-control" name="" id="withdrawAmount" placeholder="$ Amount you want to withdraw"></h4>
+                    <h4><input type="text" class="form-control" name="" id="withdrawAmount" placeholder="$ Enter amount you want to withdraw"></h4>
                     <br>
                     <button id="addWithdraw" class="btn btn-success">Withdraw</button>
                 </div>
             </div>
         </div>
     </div>
-
     <script>
         //login btn handler
        const loginBtn = document.getElementById("Login");
@@ -100,7 +99,6 @@
             const amountNumber = parseFloat(amount);
             return amountNumber;
        }
-
        function updateSpanText(id, depositNumber){
         const current = document.getElementById(id).innerText;
         const currentNumber = parseFloat(current);
@@ -108,5 +106,6 @@
         document.getElementById(id).innerText = totalAmount;
        }
     </script>
+    
 </body>
 </html>

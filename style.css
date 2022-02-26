@@ -11,6 +11,10 @@ body{
 #t-area {
     display: none;
 }
+.transaction{
+    text-align: center;
+    margin-bottom: 50px;
+}
 .t-style{
     margin: 0 20px;
     color: white;
